@@ -1,0 +1,161 @@
+.block-table {
+    background: #1F1D2B;
+    border-radius: 8px;
+    margin: 0 24px;
+    padding-top: 24px;
+    height: 400px;
+    overflow: hidden;
+    &-order {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+        padding: 0 24px;
+        h1 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+        button {
+            border: none;
+            outline: none;
+            width: 130px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #1F1D2B;
+            border: 1px solid #393C49;
+            box-sizing: border-box;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all ease 0.5s;
+            &:hover {
+                background: #EA7C69;
+                color: #fff;
+                box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+            }
+            .span2 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 130%;
+                color: #FFFFFF;
+            }
+        }
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #393C49;
+        margin-bottom: 16px;
+        h3 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+        .menu {
+            margin-left: 205px;
+        }
+        .total {
+            margin-left: 245px;
+        }
+        .status {
+            margin-left: 87px;
+        }
+    }
+    &-blocks {
+        padding: 0 24px;
+        height: 320px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 0 !important;
+            height: 0;
+            display: none !important;
+            background: transparent;
+        }
+        &-block {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 0;
+            .avatar {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 32px;
+                    height: 32px;
+                    object-fit: contain;
+                    margin-right: 16px;
+                }
+                span {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 140%;
+                    color: #E0E6E9;
+                    width: 90px;
+                }
+            }
+            h3 {
+                width: 140px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 140%;
+                color: #E0E6E9;
+                margin-left: -16px;
+            }
+            h4 {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 140%;
+                color: #E0E6E9;
+            }
+            button {
+                width: 93px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 130%;
+                color: #50D1AA;
+                outline: none;
+                border: none;
+                background: rgba(107, 226, 190, 0.24);
+                border-radius: 30px;
+                padding: 5px 12px;
+                cursor: pointer;
+                transition: all ease 0.3s;
+                &:hover {
+                    background: #EA7C69;
+                    box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+                    color: #fff;
+                }
+                &.preparing {
+                    background: rgba(146, 144, 254, 0.2);
+                    color: #9290FE;
+                    &:hover {
+                        background: #EA7C69;
+                        box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+                        color: #fff;
+                    }
+                }
+                &.pending {
+                    color: #FFB572;
+                    background: rgba(255, 181, 114, 0.2);
+                    &:hover {
+                        background: #EA7C69;
+                        box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.sittings-page {
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin: 24px;
+    }
+    &-block {
+        display: flex;
+        justify-content: space-between;
+    }
+}

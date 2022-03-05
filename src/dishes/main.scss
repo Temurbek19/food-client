@@ -1,0 +1,114 @@
+.hot-dishes {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  padding-top: 30px;
+  position: relative;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 500px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  &::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0;
+    display: none !important;
+    background: transparent;
+  }
+  .block-dishes {
+    position: relative;
+    width: 192px;
+    padding: 0 24px 24px 24px;
+    text-align: center;
+    background-color: #1f1d2b;
+    border-radius: 16px;
+    margin-bottom: 70px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 10px #ea7c69;
+    }
+    .dishes {
+      .dishes-food {
+        width: 150px;
+        height: 135px;
+        object-fit: contain;
+        position: relative;
+        top: -30px;
+      }
+      h5,
+      h6 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        color: #ffffff;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 144px;
+      }
+      .bowls {
+        color: #abbbc2;
+        margin-bottom: 0;
+      }
+    }
+    .dishes-modal {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      padding: 24px 18px;
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+      background-color: #ea7c69;
+      display: none;
+      opacity: 0.95;
+      border-radius: 16px;
+      .name,
+      .price {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #ffffff;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+
+      .food_count_input {
+        width: 100%;
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-bottom: 24px;
+        box-sizing: border-box;
+      }
+      .added_order {
+        padding: 8px 12px;
+        background: #1f1d2b;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-weight: bold;
+        border-radius: 8px;
+        &:hover {
+          background: #fff;
+          color: #ea7c69;
+        }
+      }
+      .clothes {
+        // margin-top: 20px;
+        background: #ac2811;
+      }
+    }
+  }
+  .dishes-modal.active {
+    display: block;
+  }
+}

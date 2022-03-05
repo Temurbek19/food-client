@@ -1,0 +1,96 @@
+.bolak-most {
+    background: #1F1D2B;
+    border-radius: 8px;
+    margin: 24px 0;
+    margin-bottom: 12px;
+    width: 410px;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #393C49;
+        margin-bottom: 20px;
+        h1 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 140%;
+            color: #FFFFFF;
+
+        }
+        select {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            color: #FFFFFF;
+            background: #1F1D2B;
+            border: 1px solid #393C49;
+            box-sizing: border-box;
+            border-radius: 8px;
+            padding: 14px;
+        }
+    }
+    &-scroll {
+        height: 242px;
+        overflow-y: scroll;
+        margin-bottom: 6px;
+        &::-webkit-scrollbar {
+            width: 0 !important;
+            height: 0;
+            display: none !important;
+            background: transparent;
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 22px;
+            img {
+                width: 61px;
+                height: 55px;
+                object-fit: contain;
+                margin-right: 14px;
+            }
+            div {
+                h4 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 130%;
+                    color: #E0E6E9;
+                    margin-bottom: 5px;
+                }
+                h5 {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 140%;
+                    color: #ABBBC2;
+                }
+            }
+        }
+    }
+    &-btn {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        color: #EA7C69;
+        outline: none;
+        padding: 14px;
+        display: block;
+        width: 100%;
+        background: #1F1D2B;
+        border: 1px solid #EA7C69;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+                background: #EA7C69;
+                color: #fff;
+                box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+        }
+    }
+}

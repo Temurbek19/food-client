@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #393C49;
+    margin: 0 24px;
+    .link .navbar-btn.active {
+            color: #EA7C69;
+            &::before{
+                width: 70%;
+            }
+    }
+}

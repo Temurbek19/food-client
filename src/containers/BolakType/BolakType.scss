@@ -1,0 +1,74 @@
+.bolak-type {
+    width: 100%;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    background: #1F1D2B;
+    border-radius: 8px;
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #393C49;
+        margin-bottom: 32px;
+        h1 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+        select {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            color: #FFFFFF;
+            background: #1F1D2B;
+            border: 1px solid #393C49;
+            box-sizing: border-box;
+            border-radius: 8px;
+            padding: 14px;
+        }
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            width: 176px;
+            height: 176px;
+            object-fit: contain;
+        }
+        &-right {
+            div {
+                display: flex;
+                margin-bottom: 8px;
+                img {
+                    width: 18px;
+                    height: 18px;
+                    object-fit: contain;
+                    margin-right: 10px;
+                }
+                .customers {
+                    display: flex;
+                    flex-direction: column;
+                    h5 {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 130%;
+                        color: #FFFFFF;
+                    }
+                    h6 {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 140%;
+                        color: #ABBBC2;
+                    }
+                }
+            }
+        }
+    }
+}

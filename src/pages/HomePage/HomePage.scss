@@ -1,0 +1,32 @@
+.home-page {
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &-top {
+        width: 100%;
+        .choose-dishes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 24px 0 24px;
+            h1 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+            select {
+                background: #1F1D2B;
+                border: 1px solid #393C49;
+                box-sizing: border-box;
+                border-radius: 8px;
+                padding: 10px 20px;
+                color: #fff;
+                outline: none;
+            }
+        }
+    }
+}

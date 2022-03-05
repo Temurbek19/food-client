@@ -1,0 +1,36 @@
+.sittings-sidebar {
+    background: #1F1D2B;
+    border-radius: 8px;
+    width: 350px;
+    margin: 0 24px;
+    padding: 24px;
+    .new {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        select, button, input, label {
+            margin: 15px;
+            padding: 15px;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        .label {
+            cursor: pointer;
+            color: #000;
+            background: #fff;
+        }
+        select {
+            cursor: pointer;
+        }
+        .file {
+            display: none;
+        }
+        button {
+            cursor: pointer;
+            font-size: 18px;
+            background-color: #0f0;
+        }
+    }
+}
